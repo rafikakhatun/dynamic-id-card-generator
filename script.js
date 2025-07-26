@@ -1,12 +1,10 @@
 const cards = [
-
     {
         img: "image/apna college 2.jpg",
         name: "Rafika Khatun",
         designation: "Frontend Developer",
         id: 34568987,
     },
-
     {
         img: "image/apna college 3.jpg",
         name: "Liam Anderson",
@@ -41,7 +39,7 @@ const cards = [
         img: "image/apna college 8.jpeg",
         name: "Mia Lopez",
         designation: "DevOps Engineer",
-        "id": 11223344
+        id: 11223344
     },
     {
         img: "image/apna college 9.jpeg",
@@ -67,146 +65,60 @@ const cards = [
         designation: "Network Engineer",
         id: 66554433
     },
-
     {
         img: "image/apna college 13.jpeg",
-        name: "Elon musk",
+        name: "Elon Musk",
         designation: "Software Engineer",
         id: 23456789
     }
+];
 
-]
-
-
+// Create container
 const cardContainer = document.createElement("div");
 cardContainer.classList.add("card-container");
 
+// Loop through cards
+cards.forEach(card => {
+    // Create card wrapper
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card-div");
 
-cards.forEach(card=>{
+    // Create flex wrapper
+    const flexWrapper = document.createElement("div");
+    flexWrapper.classList.add("flexWrapper");
 
-<<<<<<< HEAD
-    // create card div
-=======
+    // Profile picture
+    const profilePicture = document.createElement("img");
+    profilePicture.classList.add("img");
+    profilePicture.src = `${card.img}`;
 
-// create card div
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
+    // Employee details
+    const employeeDetails = document.createElement("div");
+    employeeDetails.classList.add("employeeDetails");
 
- const cardDiv = document.createElement("div");
- cardDiv.classList.add("card-div");
+    const name = document.createElement("p");
+    name.classList.add("name");
+    name.textContent = card.name;
 
- // flex wrapper
+    const designation = document.createElement("p");
+    designation.classList.add("designation");
+    designation.textContent = card.designation;
 
- const flexWrapper = document.createElement("div");
- flexWrapper.classList.add("flexWrapper");
+    const id = document.createElement("p");
+    id.classList.add("id");
+    id.textContent = `ID: ${card.id}`;
 
- // candidate details 
+    // Append sections
+    employeeDetails.appendChild(name);
+    employeeDetails.appendChild(designation);
+    employeeDetails.appendChild(id);
 
- const employeeDetails = document.createElement("div")
- employeeDetails.classList.add("employeeDetails");
+    flexWrapper.appendChild(profilePicture);
+    flexWrapper.appendChild(employeeDetails);
 
-<<<<<<< HEAD
-=======
+    cardDiv.appendChild(flexWrapper);
+    cardContainer.appendChild(cardDiv);
+});
 
-
-
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
- // profile picture section
-
- const profilePicture = document.createElement("img");
- profilePicture.classList.add("img");
- profilePicture.src =`${card.img}`;
-
-<<<<<<< HEAD
-  // name section 
-=======
- 
-
- // name section 
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
-  
- const name = document.createElement("p");
- name.classList.add("name");
- name.textContent = ` ${card.name}`;
-
- // designation section
-
- const designation = document.createElement("p");
- designation.classList.add("designation");
- designation.textContent = `${card.designation}`;
-
-<<<<<<< HEAD
-  // id number section
-=======
- // id number section
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
-
- const id = document.createElement("p");
- id.classList.add("id");
- id.textContent = `id : ${card.id}`
-
-
-
-<<<<<<< HEAD
-=======
- 
- 
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
- // append section
-
-cardContainer.appendChild(cardDiv);
-cardDiv.appendChild(flexWrapper);
-flexWrapper.appendChild(employeeDetails);
-flexWrapper.appendChild(profilePicture);
-=======
-// append section
-
-cardContainer.appendChild(cardDiv);
-cardDiv.appendChild(flexWrapper)
-flexWrapper.appendChild(profilePicture);
-flexWrapper.appendChild(employeeDetails);
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
-employeeDetails.appendChild(name);
-employeeDetails.appendChild(designation);
-employeeDetails.appendChild(id)
-
-
-
-
-<<<<<<< HEAD
-
-
-    })
-
-
+// Append to body
 document.body.appendChild(cardContainer);
-=======
-})
-
-
-
-
-
-
-
-
-
-
-
-document.body.appendChild(cardContainer);
-
-// flex wrapper ar moddhe 2 to div ache
-
-// 1 tai profile picture ache
-
-// 1 tai text content ache
-
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)

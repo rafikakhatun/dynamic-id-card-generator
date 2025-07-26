@@ -1,23 +1,17 @@
 body {
     padding: 0;
     margin: 0;
-
 }
 
 .main-heading {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 2rem;
-  text-transform: uppercase;
-  background: linear-gradient(to right, #0a6cc8, #1e3380); /* blue to cyan */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #0a6cc8, #1e3380);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
 
 .card-container {
     width: 100%;
@@ -26,12 +20,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-
-
 }
-
-
-
 
 .card-div {
     width: 400px;
@@ -43,56 +32,10 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     border: 1px solid rgb(181, 177, 177);
-
-
 }
 
 .flexWrapper {
-
     display: flex;
-
-}body {
-    padding: 0;
-    margin: 0;
-
-}
-
-
-
-
-
-.card-container {
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-
-
-}
-
-
-
-
-.card-div {
-    width: 400px;
-    height: 250px;
-    background-image: url("image/icard3.jpg");
-    background-size: cover;
-    margin-top: 15px;
-    margin-left: 8rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border: 1px solid rgb(181, 177, 177);
-
-
-}
-
-.flexWrapper {
-
-    display: flex;
-
 }
 
 .employeeDetails {
@@ -100,14 +43,8 @@ body {
     flex-direction: column;
     line-height: 1px;
     margin-top: 1.9rem;
-    
-    
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
 .img {
     width: 120px;
     height: 120px;
@@ -115,7 +52,6 @@ body {
     margin-top: 50px;
     margin-left: 20px;
     border: 2px solid white;
-
 }
 
 .name {
@@ -129,30 +65,26 @@ body {
     color: white;
     font-size: 1.3rem;
     margin-left: 2rem;
-    
-   
 }
 
-.id{
-    color:white;
+.id {
+    color: white;
     font-size: 1rem;
     margin-left: 4rem;
 }
 
-
-
-<<<<<<< HEAD
-
-=======
- /* Responsive Design */
- @media (max-width: 600px) {
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
     .card-container {
         grid-template-columns: repeat(1, 1fr);
-        
     }
 
-    .card-div{
-        margin-left: 3.4rem ;
+    .card-div {
+        margin-left: 3.4rem;
+    }
+
+    .main-heading{
+        font-size: 30px;
     }
 }
 
@@ -160,7 +92,4 @@ body {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-   
 }
->>>>>>> 3234e08 (Added responsive layout for card container using media queries)
