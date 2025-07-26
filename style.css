@@ -104,6 +104,10 @@ body {
     
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
 .img {
     width: 120px;
     height: 120px;
@@ -137,4 +141,26 @@ body {
 
 
 
+<<<<<<< HEAD
 
+=======
+ /* Responsive Design */
+ @media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .card-div{
+        margin-left: 3.4rem ;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   
+}
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)

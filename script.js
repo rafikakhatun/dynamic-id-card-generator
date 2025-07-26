@@ -84,7 +84,12 @@ cardContainer.classList.add("card-container");
 
 cards.forEach(card=>{
 
+<<<<<<< HEAD
     // create card div
+=======
+
+// create card div
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
 
  const cardDiv = document.createElement("div");
  cardDiv.classList.add("card-div");
@@ -99,13 +104,25 @@ cards.forEach(card=>{
  const employeeDetails = document.createElement("div")
  employeeDetails.classList.add("employeeDetails");
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
  // profile picture section
 
  const profilePicture = document.createElement("img");
  profilePicture.classList.add("img");
  profilePicture.src =`${card.img}`;
 
+<<<<<<< HEAD
   // name section 
+=======
+ 
+
+ // name section 
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
   
  const name = document.createElement("p");
  name.classList.add("name");
@@ -117,7 +134,11 @@ cards.forEach(card=>{
  designation.classList.add("designation");
  designation.textContent = `${card.designation}`;
 
+<<<<<<< HEAD
   // id number section
+=======
+ // id number section
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
 
  const id = document.createElement("p");
  id.classList.add("id");
@@ -125,12 +146,18 @@ cards.forEach(card=>{
 
 
 
+<<<<<<< HEAD
+=======
+ 
+ 
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
 
 
 
 
 
 
+<<<<<<< HEAD
 
 
  // append section
@@ -139,6 +166,14 @@ cardContainer.appendChild(cardDiv);
 cardDiv.appendChild(flexWrapper);
 flexWrapper.appendChild(employeeDetails);
 flexWrapper.appendChild(profilePicture);
+=======
+// append section
+
+cardContainer.appendChild(cardDiv);
+cardDiv.appendChild(flexWrapper)
+flexWrapper.appendChild(profilePicture);
+flexWrapper.appendChild(employeeDetails);
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
 employeeDetails.appendChild(name);
 employeeDetails.appendChild(designation);
 employeeDetails.appendChild(id)
@@ -146,9 +181,32 @@ employeeDetails.appendChild(id)
 
 
 
+<<<<<<< HEAD
 
 
     })
 
 
 document.body.appendChild(cardContainer);
+=======
+})
+
+
+
+
+
+
+
+
+
+
+
+document.body.appendChild(cardContainer);
+
+// flex wrapper ar moddhe 2 to div ache
+
+// 1 tai profile picture ache
+
+// 1 tai text content ache
+
+>>>>>>> 3234e08 (Added responsive layout for card container using media queries)
