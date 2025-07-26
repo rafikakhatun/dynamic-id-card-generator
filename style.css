@@ -78,6 +78,21 @@ body {
     .main-heading{
         font-size: 30px;
     }
+
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-div {
+        margin-left: 3.4rem;
+    }
+
+    .main-heading{
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
