@@ -94,6 +94,20 @@ cards.forEach(card=>{
  const flexWrapper = document.createElement("div");
  flexWrapper.classList.add("flexWrapper");
 
+ // candidate details 
+
+ const employeeDetails = document.createElement("div")
+ employeeDetails.classList.add("employeeDetails");
+
+ // profile picture section
+
+ const profilePicture = document.createElement("img");
+ profilePicture.classList.add("img");
+ profilePicture.src =`${card.img}`;
+
+
+
+
 
 
 
@@ -102,6 +116,8 @@ cards.forEach(card=>{
 
 cardContainer.appendChild(cardDiv);
 cardDiv.appendChild(flexWrapper);
+flexWrapper.appendChild(employeeDetails);
+flexWrapper.appendChild(profilePicture);
 
 
 
