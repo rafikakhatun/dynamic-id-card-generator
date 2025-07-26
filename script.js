@@ -105,6 +105,13 @@ cards.forEach(card=>{
  profilePicture.classList.add("img");
  profilePicture.src =`${card.img}`;
 
+  // name section 
+  
+ const name = document.createElement("p");
+ name.classList.add("name");
+ name.textContent = ` ${card.name}`;
+
+
 
 
 
@@ -118,6 +125,8 @@ cardContainer.appendChild(cardDiv);
 cardDiv.appendChild(flexWrapper);
 flexWrapper.appendChild(employeeDetails);
 flexWrapper.appendChild(profilePicture);
+employeeDetails.appendChild(name);
+
 
 
 
