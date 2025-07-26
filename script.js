@@ -101,6 +101,7 @@ cards.forEach(card=>{
  // append section
 
 cardContainer.appendChild(cardDiv);
+cardDiv.appendChild(flexWrapper);
 
 
 
