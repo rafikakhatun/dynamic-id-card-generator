@@ -111,6 +111,13 @@ cards.forEach(card=>{
  name.classList.add("name");
  name.textContent = ` ${card.name}`;
 
+ // designation section
+
+ const designation = document.createElement("p");
+ designation.classList.add("designation");
+ designation.textContent = `${card.designation}`;
+
+
 
 
 
@@ -126,6 +133,7 @@ cardDiv.appendChild(flexWrapper);
 flexWrapper.appendChild(employeeDetails);
 flexWrapper.appendChild(profilePicture);
 employeeDetails.appendChild(name);
+employeeDetails.appendChild(designation);
 
 
 
