@@ -117,6 +117,13 @@ cards.forEach(card=>{
  designation.classList.add("designation");
  designation.textContent = `${card.designation}`;
 
+  // id number section
+
+ const id = document.createElement("p");
+ id.classList.add("id");
+ id.textContent = `id : ${card.id}`
+
+
 
 
 
@@ -134,6 +141,7 @@ flexWrapper.appendChild(employeeDetails);
 flexWrapper.appendChild(profilePicture);
 employeeDetails.appendChild(name);
 employeeDetails.appendChild(designation);
+employeeDetails.appendChild(id)
 
 
 
