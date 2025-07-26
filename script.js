@@ -76,3 +76,37 @@ const cards = [
     }
 
 ]
+
+
+const cardContainer = document.createElement("div");
+cardContainer.classList.add("card-container");
+
+
+cards.forEach(card=>{
+
+    // create card div
+
+ const cardDiv = document.createElement("div");
+ cardDiv.classList.add("card-div");
+
+ // flex wrapper
+
+ const flexWrapper = document.createElement("div");
+ flexWrapper.classList.add("flexWrapper");
+
+
+
+
+
+ // append section
+
+cardContainer.appendChild(cardDiv);
+
+
+
+
+
+    })
+
+
+document.body.appendChild(cardContainer);
